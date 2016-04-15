@@ -2,6 +2,7 @@ var _ = require('lodash')
 
 module.exports = function(ssn) {
   return {
+    number: ssn,
     isValid: hasValidContent() && hasValidChecksum() && hasValidBirthDate(),
     birthDate: getBirthDate(),
     gender: getGender()
