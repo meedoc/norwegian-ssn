@@ -4,7 +4,8 @@
   "description": "Norwegian SSN validator and information extractor",
   "main": "validator.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "./node_modules/.bin/eslint . -f table; exit 0"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "lodash": "4.11.1"
   },
   "devDependencies": {
+    "eslint": "2.7.0",
+    "eslint-config-meedoc": "https://github.com/meedoc/eslint-config-meedoc.git#master",
     "mocha": "2.4.5",
     "should": "8.3.1"
   }
