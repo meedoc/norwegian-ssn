@@ -1,4 +1,4 @@
-var should = require('should')
+var should = require('should') // eslint-disable-line
 var SSN = require('../validator.js')
 
 describe('Norwegian SSN validator', function() {
@@ -69,4 +69,3 @@ describe('Norwegian SSN validator', function() {
     SSN('18099805991').should.have.property('isValid').eql(false)
   })
 })
-
