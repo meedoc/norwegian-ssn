@@ -67,14 +67,8 @@
     }
 
     function getGender() {
-      if (getSsnType() === 'FH') {
-        return
-      }
-
-      if (numberAt(8, 9) % 2 === 0) {
-        return 'female'
-      } else {
-        return 'male'
+      if (getSsnType() !== 'FH') {
+        return (numberAt(8, 9) % 2 === 0) ? 'female' : 'male'
       }
     }
 
